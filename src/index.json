@@ -85,20 +85,6 @@
     {
         "template": "video-carousel",
         "props": {
-            "id": "anybg-sameid-2",
-            "title": "Animated Background (Same Identity)",
-            "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/emo/066d-rushing_river.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/emo/AJ2ke-dancing_fire.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/emo/kara-bllowing_sails.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/emo/mola-erupting_volcano.mp4"
-            ],
-            "count": 4
-        }
-    },
-    {
-        "template": "video-carousel",
-        "props": {
             "id": "personalize-1",
             "title": "Replace Personalized T2I Models",
             "items": [
@@ -120,19 +106,6 @@
                 "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/jana-txtonly-flames-2.mp4"
             ],
             "count": 1
-        }
-    },
-    {
-        "template": "text-video",
-        "props": {
-            "id": "anytext-1",
-            "title": "Text Described Identity",
-            "items": [
-                {
-                    "text": "Rushing River",
-                    "video": "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/emo/066d-rushing_river.mp4"
-                }
-            ]
         }
     }
 ]
