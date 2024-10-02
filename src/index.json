@@ -47,25 +47,10 @@
             "items": [
                 "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-0A8lj.mp4",
                 "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-qbAvR.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-W5Md.mp4"
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-W5Md.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/Long/joker.mp4"
             ],
             "count": 1
-        }
-    },
-    {
-        "template": "video-carousel",
-        "props": {
-            "id": "anybg",
-            "title": "Animated Background",
-            "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/10-066d-sea.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/manclad-kara-dancefire.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/knuppe-AJ2ke-bubbles.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/manscarf-mola-volcano.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/orange-kara_s0.6-traffic.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/pinksnow-8BcrP-rising_smoke.mp4"
-            ],
-            "count": 3
         }
     },
     {
@@ -88,8 +73,7 @@
             "id": "personalize-1",
             "title": "Replace Personalized T2I Models",
             "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/10.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/emo.mp4"
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/tys.mp4"
             ],
             "count": 1
         }
@@ -97,13 +81,15 @@
     {
         "template": "video-carousel",
         "props": {
-            "id": "personalize-txtonly",
-            "title": "Replace Personalized T2I Models (without reference image)",
+            "id": "anytext",
+            "title": "Describe Identity with Text Description",
             "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/jana-txtonly-cars-1.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/jana-txtonly-cars-2.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/jana-txtonly-flames-1.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/jana-txtonly-flames-2.mp4"
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/mechgirl-talk_emotion-swirling_mist.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/biden-talk_emo-sparkling_fireworks.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/bride-tys-people.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/kara-10-dancing_fire.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-leaves.mp4",
+                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-volcano.mp4"
             ],
             "count": 1
         }
