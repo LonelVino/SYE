@@ -24,12 +24,12 @@ jobs:
           pnpm run build --base=/${REPO}
         env:
           # TODO: change repo name
-          REPO: AnyExpress
+          REPO: Any
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
           # TODO: change repo name
-          repositorty-name: AnyExpress-alpha/AnyExpress
+          repositorty-name: AnyExpress-alpha/Any
           target-folder: /
