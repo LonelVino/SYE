@@ -36,21 +36,7 @@
         "template": "framework",
         "props": {
             "image": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/pipeline_modular_v2.jpg",
-            "description": ""
-        }
-    },
-    {
-        "template": "video-carousel",
-        "props": {
-            "id": "anypose",
-            "title": "Any Face Pose",
-            "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-0A8lj.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-qbAvR.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyFacePose/same_kps-W5Md.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/Long/joker.mp4"
-            ],
-            "count": 1
+            "description": "Modular Pipeline of AnyExpress"
         }
     },
     {
