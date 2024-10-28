@@ -2,25 +2,99 @@
     {
         "template": "title",
         "props": {
-            "title": "AnyExpress",
-            "subtitle": "One Adapter Enabling Highly Flexible Audio-Driven Portrait Animation",
+            "title": "Schedule Your Edit",
+            "subtitle": "A Simple yet Effective Diffusion Noise Schedule for Image Editing ",
             "authors": [
                 [
                     {
-                        "name": "Anonymous authors",
+                        "name": "Haonan Lin",
                         "homepage": "",
-                        "suffix": ""
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Mengmeng Wang",
+                        "homepage": "",
+                        "suffix": "2,4*"
+                    },
+                    {
+                        "name": "Jiahao Wang",
+                        "homepage": "",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Wenbin An",
+                        "homepage": "",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Yan Chen",
+                        "homepage": "",
+                        "suffix": "1*"
                     }
                 ],
                 [
                     {
-                        "name": "Paper under double-blind review",
+                        "name": "Feng Tian",
                         "homepage": "",
-                        "suffix": ""
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Yong Liu",
+                        "homepage": "",
+                        "suffix": "3,4"
+                    },
+                    {
+                        "name": "Guang Dai",
+                        "homepage": "",
+                        "suffix": "4"
+                    },
+                    {
+                        "name": "Jingdong Wang",
+                        "homepage": "",
+                        "suffix": "5"
+                    },
+                    {
+                        "name": "Qianying Wang",
+                        "homepage": "",
+                        "suffix": "6"
+                    }
+                ],
+                [
+                    {
+                        "name": "Xi'an Jiaotong University",
+                        "homepage": "",
+                        "prefix": "1"
+                    },
+                    {
+                        "name": "Zhejiang University of Technology",
+                        "homepage": "",
+                        "prefix": "2"
+                    },
+                    {
+                        "name": "Zhejiang University",
+                        "homepage": "",
+                        "prefix": "3"
+                    },
+                    {
+                        "name": "SGIT AI Lab, State Grid Corporation of China",
+                        "homepage": "",
+                        "prefix": "4"
+                    },
+                    {
+                        "name": "Baidu Inc",
+                        "homepage": "",
+                        "prefix": "5"
+                    },
+                    {
+                        "name": "Lenovo Research",
+                        "homepage": "",
+                        "prefix": "6"
                     }
                 ]
             ],
             "resources": {
+                "pdf": "https://arxiv.org/pdf/2410.18756",
+                "arxiv": "https://arxiv.org/abs/2410.18756"
             },
             "mainVideo": ""
         }
@@ -28,56 +102,72 @@
     {
         "template": "abstract",
         "props": {
-            "figure": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/Teaser_v2.jpg",
-            "content": "Portrait animation, particularly audio-driven portrait animation, requires flexibility in facial expressions, head movement, and dynamic contexts. However, existing diffusion-based methods rely heavily on the design of ReferenceNet, leading to increased training complexity and incompatibility with other custom base models or adapters, also limiting face position, view changes, and animated context generation. To address these challenges, we propose AnyExpress, a lightweight, modular framework that eliminates the need for ReferenceNet, reducing the number of trainable parameters by 7 times. By training one plug-and-play audio-motion adapter, it allows freeform, expressive audio-driven portrait animation with any face pose and any animated context, while supporting text-driven modifications. In the context of character generation, there are two primary methods to control the desired character attributes. First, if a specific ID needs to be assigned, this can be achieved through ID controls (e.g., IP-Adapter-Face). Alternatively, the character’s attributes can be controlled through textual descriptions. Through comprehensive qualitative and quantitative analyses, AnyExpress demonstrates unprecedented freedom in generating videos with dynamic background, lower training demand, and seamless integration with evolving custom models and control adapters, providing a flexible solution for diverse generation needs. We will release our code and demo to the community, encouraging further improvement."
+            "figure": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/homepage.jpg",
+            "content": "Text-guided diffusion models have significantly advanced image editing, enabling high-quality and diverse modifications driven by text prompts. However, effective editing requires inverting the source image into a latent space, a process often hindered by prediction errors inherent in DDIM inversion. These errors accumulate during the diffusion process, resulting in inferior content preservation and edit fidelity, especially with conditional inputs. We address these challenges by investigating the primary contributors to error accumulation in DDIM inversion and identify the singularity problem in traditional noise schedules as a key issue. To resolve this, we introduce the Logistic Schedule, a novel noise schedule designed to eliminate singularities, improve inversion stability, and provide a better noise space for image editing. This schedule reduces noise prediction errors, enabling more faithful editing that preserves the original content of the source image. Our approach requires no additional retraining and is compatible with various existing editing methods. Experiments across eight editing tasks demonstrate the Logistic Schedule's superior performance in content preservation and edit fidelity compared to traditional noise schedules, highlighting its adaptability and effectiveness."
         }
     },
     {
         "template": "framework",
         "props": {
-            "image": "//anyexpress.oss-cn-beijing.aliyuncs.com/pics/pipeline_modular_v2.jpg",
-            "description": "Modular Pipeline of AnyExpress"
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/inversion_process-derivatives.jpg",
+            "description": "Motivation of Logistic Schedule for Inversion-Based Image Editing"
         }
     },
     {
-        "template": "video-carousel",
+        "template": "pic-sec",
         "props": {
-            "id": "anybg-sameid-1",
-            "title": "Animated Background (Same Identity)",
-            "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/6eH2B-breaking_waves.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/joker-dancing_fire.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/kara-bllowing_sails.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/animated_bg/Adriana/mola-erupting_volcano.mp4"
-            ],
-            "count": 4
+            "id": "add_obj",
+            "title": "Object Addition",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/add_obj.jpg",
+            "description": ""
         }
     },
     {
-        "template": "video-carousel",
+        "template": "pic-sec",
         "props": {
-            "id": "personalize-1",
-            "title": "Replace Personalized T2I Models",
-            "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/personalize/tys.mp4"
-            ],
-            "count": 1
+            "id": "",
+            "title": "Object Switch",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/i2i.jpg"
         }
     },
     {
-        "template": "video-carousel",
+        "template": "pic-sec",
         "props": {
-            "id": "anytext",
-            "title": "Describe Identity with Text Description",
-            "items": [
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/mechgirl-talk_emotion-swirling_mist.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/biden-talk_emo-sparkling_fireworks.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/bride-tys-people.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/kara-10-dancing_fire.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-leaves.mp4",
-                "//anyexpress.oss-cn-beijing.aliyuncs.com/AnyText/tys-tys-volcano.mp4"
-            ],
-            "count": 3
+            "id": "attr_color",
+            "title": "Attributes Color",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/attr_color.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "attr_content",
+            "title": "Attributes Content",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/attr_content.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "pose",
+            "title": "Non-rigid Editing",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/pose.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "scene",
+            "title": "Scene Editing",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/scene.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "dreambooth",
+            "title": "With Dreambooth",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/dreambooth_compare.jpg"
         }
     }
 ]

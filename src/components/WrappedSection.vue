@@ -2,6 +2,7 @@
     <TitleSection v-if="template === 'title'" :props="props"></TitleSection>
     <AbstractSection v-if="template === 'abstract'" :props="props"></AbstractSection>
     <FrameworkSection v-if="template === 'framework'" :props="props" />
+    <PicSection v-if="template === 'pic-sec'" :props="props"></PicSection>
     <VideoComparision v-if="template === 'video-comparision'" :props="props" />
     <TextVideo v-if="template === 'text-video'" :props="props" />
     <SingleVideo v-if="template === 'single-video'" :props="props" />
@@ -11,6 +12,7 @@
 
 <script setup lang="ts">
 import TitleSection from "@/components/TitleSection.vue"
+import PicSection from "@/components/PicSection.vue"
 import AbstractSection from "@/components/AbstractSection.vue"
 import FrameworkSection from "@/components/FrameworkSection.vue"
 import VideoComparision from "@/components/VideoComparision.vue"
