@@ -1,0 +1,181 @@
+[
+    {
+        "template": "title",
+        "props": {
+            "title": "Schedule Your Edit",
+            "subtitle": "A Simple yet Effective Diffusion Noise Schedule for Image Editing ",
+            "authors": [
+                [
+                    {
+                        "name": "Haonan Lin",
+                        "homepage": "",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Mengmeng Wang",
+                        "homepage": "",
+                        "suffix": "2,4*"
+                    },
+                    {
+                        "name": "Jiahao Wang",
+                        "homepage": "",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Wenbin An",
+                        "homepage": "",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Yan Chen",
+                        "homepage": "",
+                        "suffix": "1*"
+                    }
+                ],
+                [
+                    {
+                        "name": "Feng Tian",
+                        "homepage": "",
+                        "suffix": "1"
+                    },
+                    {
+                        "name": "Yong Liu",
+                        "homepage": "",
+                        "suffix": "3,4"
+                    },
+                    {
+                        "name": "Guang Dai",
+                        "homepage": "",
+                        "suffix": "4"
+                    },
+                    {
+                        "name": "Jingdong Wang",
+                        "homepage": "",
+                        "suffix": "5"
+                    },
+                    {
+                        "name": "Qianying Wang",
+                        "homepage": "",
+                        "suffix": "6"
+                    }
+                ],
+                [
+                    {
+                        "name": "Xi'an Jiaotong University",
+                        "homepage": "",
+                        "prefix": "1"
+                    },
+                    {
+                        "name": "Zhejiang University of Technology",
+                        "homepage": "",
+                        "prefix": "2"
+                    },
+                    {
+                        "name": "Zhejiang University",
+                        "homepage": "",
+                        "prefix": "3"
+                    },
+                    {
+                        "name": "SGIT AI Lab, State Grid Corporation of China",
+                        "homepage": "",
+                        "prefix": "4"
+                    },
+                    {
+                        "name": "Baidu Inc",
+                        "homepage": "",
+                        "prefix": "5"
+                    },
+                    {
+                        "name": "Lenovo Research",
+                        "homepage": "",
+                        "prefix": "6"
+                    }
+                ]
+            ],
+            "resources": {
+                "pdf": "https://arxiv.org/pdf/2410.18756",
+                "arxiv": "https://arxiv.org/abs/2410.18756"
+            },
+            "mainVideo": ""
+        }
+    },
+    {
+        "template": "abstract",
+        "props": {
+            "figure": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/homepage.jpg",
+            "content": "Text-guided diffusion models have significantly advanced image editing, enabling high-quality and diverse modifications driven by text prompts. However, effective editing requires inverting the source image into a latent space, a process often hindered by prediction errors inherent in DDIM inversion. These errors accumulate during the diffusion process, resulting in inferior content preservation and edit fidelity, especially with conditional inputs. We address these challenges by investigating the primary contributors to error accumulation in DDIM inversion and identify the singularity problem in traditional noise schedules as a key issue. To resolve this, we introduce the Logistic Schedule, a novel noise schedule designed to eliminate singularities, improve inversion stability, and provide a better noise space for image editing. This schedule reduces noise prediction errors, enabling more faithful editing that preserves the original content of the source image. Our approach requires no additional retraining and is compatible with various existing editing methods. Experiments across eight editing tasks demonstrate the Logistic Schedule's superior performance in content preservation and edit fidelity compared to traditional noise schedules, highlighting its adaptability and effectiveness."
+        }
+    },
+    {
+        "template": "framework",
+        "props": {
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/inversion_process-derivatives.jpg",
+            "description": "Motivation of Logistic Schedule for Inversion-Based Image Editing"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "add_obj",
+            "title": "Object Addition",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/add_obj.jpg",
+            "description": ""
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "",
+            "title": "Object Switch",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/i2i.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "attr_color",
+            "title": "Attributes Color",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/attr_color.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "attr_content",
+            "title": "Attributes Content",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/attr_content.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "attr_materials",
+            "title": "Attributes Materials",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/attr_materials.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "pose",
+            "title": "Non-rigid Editing",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/pose.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "scene",
+            "title": "Scene Editing",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/scene.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
+            "id": "dreambooth",
+            "title": "With Dreambooth",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/dreambooth_compare.jpg"
+        }
+    }
+]
