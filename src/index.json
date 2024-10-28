@@ -149,6 +149,14 @@
     {
         "template": "pic-sec",
         "props": {
+            "id": "attr_materials",
+            "title": "Attributes Materials",
+            "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/attr_materials.jpg"
+        }
+    },
+    {
+        "template": "pic-sec",
+        "props": {
             "id": "pose",
             "title": "Non-rigid Editing",
             "image": "//logistic-schedule.oss-cn-beijing.aliyuncs.com/pics/results/pose.jpg"
